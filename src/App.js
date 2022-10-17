@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 
-import UserContainer from "./component/UserContainer";
 import { Provider } from "react-redux";
 import store from "./redux/store";
 import { Route, Routes } from "react-router-dom";
