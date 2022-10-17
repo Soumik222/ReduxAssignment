@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import UserDetailsCard from "./UserDetailsCard";
 import styled from "styled-components";
@@ -40,6 +40,7 @@ const UserDetails = (props) => {
     if (location.state == null) {
       navigate(-1);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // const data = location.state.data;
